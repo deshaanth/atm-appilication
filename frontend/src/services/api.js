@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5001/api/atm",
+  baseURL: "https://atm-appilication.onrender.com",
 });
 
 export const signup = (form) => API.post("/signup", form);
