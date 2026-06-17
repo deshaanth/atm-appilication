@@ -13,7 +13,7 @@ const app = express();
 app.use(cors({
   origin:"https://atm-appilication.vercel.app",
 }));
-app.use(cors());
+//app.use(cors());
 app.use(express.json());
 
 app.use("/api/atm", require("./routes/atmRoutes"));
